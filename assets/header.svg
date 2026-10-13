@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="200" fill="none">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2540" />
+      <stop offset="35%" stop-color="#144a86" />
+      <stop offset="70%" stop-color="#1e6bbf" />
+      <stop offset="100%" stop-color="#2d82e0" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.8" />
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="900" height="200" rx="16" fill="url(#bgGradient)" filter="url(#shadow)" />
+  <rect width="900" height="200" rx="16" fill="url(#grid)" />
+
+  <!-- Decorative Accent Circles -->
+  <circle cx="820" cy="40" r="120" fill="url(#glowGrad)" opacity="0.12" filter="blur(20px)" />
+  <circle cx="80" cy="160" r="90" fill="#00f2fe" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Accent Border Top Bar -->
+  <rect x="25" y="1" width="850" height="3" rx="1.5" fill="url(#glowGrad)" opacity="0.5" />
+
+  <!-- Title & Subtitle -->
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <!-- Main Name -->
+    <text x="450" y="88" fill="#ffffff" font-size="42" font-weight="800" letter-spacing="1">
+      Zelalem Tesfaye
+    </text>
+
+    <!-- Subtitle -->
+    <text x="450" y="126" fill="#e0f0ff" font-size="18" font-weight="500" letter-spacing="0.5">
+      Full-Stack &amp; Systems Engineer &bull; Backend Developer &bull; DevOps Enthusiast
+    </text>
+
+    <!-- Tech tagline badge -->
+    <rect x="275" y="146" width="350" height="28" rx="14" fill="rgba(0, 0, 0, 0.22)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    <text x="450" y="165" fill="#a8d4ff" font-size="13" font-weight="600" letter-spacing="0.3">
+      Python &bull; Next.js &bull; C / Systems &bull; Enterprise Architectures
+    </text>
+  </g>
+</svg>
